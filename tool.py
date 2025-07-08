@@ -22,6 +22,9 @@ def init_db():
     conn.commit()
     conn.close()
     print("Database initialized.")
+    # --- Non-vulnerable change for PR testing ---
+    print("Database initialization complete for PR test.")
+
 
 def login_user_vulnerable(username, password):
     """
